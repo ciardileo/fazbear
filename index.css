@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* configurações gerais */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;  /* "auto" or "thin" */
+    scrollbar-color: #181a19 #271f30 ;   /* scroll thumb and track */   
+}   
+
+/* scroll bar personalization */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #271F30;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #101111;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #271F30;  /* creates padding around scroll thumb */
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+main{
+    background-color: rgb(19, 19, 19);
+    margin: 0rem 10rem 0rem 10rem;
+    padding: 15px;
+}
+
+/* cabeçalho e navbar */ 
+header > nav{
+    display: flex;
+    width: 100vw;
+    background-color: rgb(39, 39, 39);
+}
+
+header > nav > ul{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    display: block;
+    height: 7vw;
+}
+
+header > nav > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+header > nav > ul > li > a{
+    color: white;
+    transition: 0.2s;
+}
+
+header > nav > ul > li > a:hover{
+    color: antiquewhite;
+}
+
+/* welcome */
+#welcome{
+    background: url("https://pbs.twimg.com/media/FouqXBjWYAAHnUo.jpg") center top no-repeat scroll;
+    background-size: cover;
+    height: 60vh;
+}
+
+#layer{
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 100%;
+    height: 100%;
+}
+
+#welcome > div > h1{
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#welcome > div > h2{
+    color: white;
+    margin: 20px;
+    width: 20vw;
+    font-size: 20px;
+}
+
+/* about us */
+
+h1{
+    margin: 15px;
+    color: white;
+}
+
+h2{
+    color: white;
+    margin: 5px 0px 20px 0px;
+    font-size: 20px;
+}
+
+p, cite, aside{
+    color: white;
+    margin: 0px 20px 0px 20px;
+}
+
+/* animatronics */
+article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    padding: 10px;
+    width: 35vw;
+}
+
+#animatronics h2{
+    text-align: center;
+}
+
+.image{
+    width: 40vw;
+}
+
+img.animatronic{
+    display: block;
+    height: 60vh;
+    margin:20px auto;
+}
+
+/* creators */
+#creators h2{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    padding: 10px;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 15px;
+}
